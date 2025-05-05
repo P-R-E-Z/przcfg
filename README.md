@@ -1,4 +1,4 @@
-Personal scoped dotfile configs for `prz`.
+Personal scoped dotfile configs for `Prez`.
 
 This repo contains modular configurations used across my Fedora 42 Workstation setups. Each folder is purpose-built for a specific tool, keeping configs easy to track and deploy.
 
