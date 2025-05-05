@@ -1,0 +1,7 @@
+# Ignore OS and editor crap
+.DS_Store
+*.swp
+*.swo
+
+# Optional: if you symlink anything you don’t want versioned
+*.bak
