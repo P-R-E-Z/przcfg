@@ -13,6 +13,11 @@ This project follows a simplified version of [Keep a Changelog](https://keepacha
 
 ---
 
+## [0.1.1] - 2025-05-04
+
+### Added
+- MIT License
+
 ## [0.1.0] – 2025-05-03
 
 ### Added
