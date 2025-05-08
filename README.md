@@ -45,7 +45,7 @@ This config setup assumes you are running a Fedora-based Linux system (tested on
 Clone into your `~/dotfiles` directory:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/przcfg ~/dotfiles/przcfg
+git clone https://github.com/P-R-E-Z/przcfg ~/dotfiles/przcfg
 
 ## Bootstrap Script (WIP)
 
