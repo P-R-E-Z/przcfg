@@ -1,4 +1,4 @@
-Personal scoped dotfile configs for `Prez`.
+Personal configs for my development setup
 
 This repo contains modular configurations used across my Fedora 42 Workstation setups. Each folder is purpose-built for a specific tool, keeping configs easy to track and deploy.
 
@@ -44,10 +44,9 @@ This config setup assumes you are running a Fedora-based Linux system (tested on
 
 Clone into your `~/dotfiles` directory:
 
-```bash
 git clone https://github.com/P-R-E-Z/przcfg ~/dotfiles/przcfg
 
-## Bootstrap Script (WIP)
+Bootstrap Script (WIP)
 
 This repo includes a WIP `bootstrap.sh` script designed to link modular configuration files into your home directory.
 
