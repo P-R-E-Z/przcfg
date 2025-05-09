@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-# przcfg bootstrap.sh – WIP system dotfiles setup 
-# This script will eventually automate full system configuration. 
-# For now, it links modular dotfiles (e.g., Zsh) without overwriting system files. 
-# 
-# Manual alternatives: # ln -sf ~/dotfiles/przcfg/zsh/.zshrc ~/.zshrc # ln -sfn ~/dotfiles/przcfg/zsh/.zshrc.d ~/.zshrc.d  
+# przcfg prez-dev-setup.sh – WIP system dotfiles setup
+# This script will eventually automate full system configuration.
+# For now, it links modular dotfiles (e.g., Zsh) without overwriting system files.
+#
+# Manual alternatives: # ln -sf ~/dotfiles/przcfg/zsh/.zshrc ~/.zshrc # ln -sfn ~/dotfiles/przcfg/zsh/.zshrc.d ~/.zshrc.d
 
-set -e  
+set -e
 
-echo "[przcfg] wip Bootstrap script (version $VERSION) starting..."
+echo "[przcfg] WIP install script (version $VERSION) starting..."
 
 # Absolute path
-REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]")" && pwd)"
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # What's been done
 echo "Using repo path: $REPO_DIR"
@@ -30,6 +30,7 @@ fi
 # Detect Konsole configs
 if [ -d "REPO_DIR/konsole-theme" ]; then
     echo "Konsole theme repo detected. Manual import or integration TBD."
+fi
 
-echo "[przcfg] Bootstrap completed (non-destructive mode)."
+echo "[przcfg] Install completed (non-destructive mode)."
 echo "Reminder: this is a WIP script. No system-wide changes have been made."

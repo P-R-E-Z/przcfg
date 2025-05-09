@@ -1,0 +1,17 @@
+# Normalize line endings
+*.sh text eol=lf
+*.zsh text eol=lf
+*.lua text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+
+# Mark all shell scripts as shell for syntax highlighting on GitHub
+*.sh linguist-language=Shell
+*.zsh linguist-language=Shell
+
+# Prevent Markdown from skewing language stats
+*.md linguist-documentation
+
+# Treat dotfiles as config, not code
+.zshrc linguist-language=Shell
+.zshrc.d/* linguist-language=Shell

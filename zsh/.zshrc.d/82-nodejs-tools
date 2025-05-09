@@ -1,0 +1,5 @@
+# Node.js tool helpers
+
+# Suppress node warnings & increase memory for heavy tools
+export NODE_NO_WARNINGS=1
+export NODE_OPTIONS="--max-old-space-size=4096"

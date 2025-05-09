@@ -1,1 +1,2 @@
-for file in ~/.zshrc.d/*.zsh; do source "$file"; done
+for file in $(ls -1 ~/.zshrc.d/*.zsh | sort); do source "$file"; done
+
