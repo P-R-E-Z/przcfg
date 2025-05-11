@@ -1,0 +1,8 @@
+# Post-oh-my-zsh initialization hooks
+
+# Init starship and poetry completions
+eval "$(starship init zsh)"
+
+if command -v poetry &>/dev/null; then
+  eval "$(poetry completions zsh)"
+fi

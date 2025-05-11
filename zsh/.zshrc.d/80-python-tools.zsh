@@ -1,9 +1,8 @@
 # Python tool helpers
 
-# Poetry shell completions
-
-if command -v poetry &>/dev/null; then
-    eval "$(poetry completions zsh)"
+# Defer Poetry completions until after compinit (inside oh-my-zsh.sh)
+if (( ${+functions[compdef]} )) && command -v poetry &>/dev/null; then
+  eval "$(poetry completions zsh)"
 fi
 
 # Prevent Python from writing .pyc files outside of __pycache__

@@ -26,7 +26,7 @@ alias lsf="eza -lah --icons --only-files"
 alias ga="git add ."
 alias gaa="git add --all"
 alias gcm="git commit -m"
-alias gca="git commit --ammend --no-edit"
+alias gca="git commit --amend --no-edit"
 alias gcam="git commit --amend -m"
 
 # Undo & Fix
@@ -39,6 +39,7 @@ alias gmt="git mergetool"
 alias grb="git rebase"
 alias grbc="git rebase --continue"
 alias grba="git rebase --abort"
+alias gpr="git pull --rebase"
 
 # Stashing
 alias gst="git stash"
@@ -48,7 +49,7 @@ alias gstc="git stash clear"
 
 # Inspect & Browse
 alias glg="git log --oneline --graph --decorate --all"
-alias gshow="git show"
+alias gshow="git remote show origin"
 alias gblame="git blame"
 
 # Remotes
@@ -62,7 +63,7 @@ alias gp="git push"
 alias gb="git branch"
 alias gco="git checkout"
 alias gpo="git push origin HEAD"
-alias gpull="git pull origin"
+alias gpull="git pull"
 
 
 # ─── Dev Tools ────────────────────────────────────
