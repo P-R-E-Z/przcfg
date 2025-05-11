@@ -8,8 +8,21 @@ This project follows a simplified version of [Keep a Changelog](https://keepacha
 
 ## [Unreleased]
 
-- Planning integration of `starship` and `konsole-theme` modules
 - Preparing for full system bootstrap support (WIP)
+
+---
+
+## [0.5.1] - 2025-05-11
+
+### Fixed
+
+- Resolved Powerlevel10k [WARNING]: Console output during zsh    initialization detected
+
+- Moved starship and poetry completions to new 91-post-init.zsh to avoid triggering compdef/_describe errors before compinit
+
+- Wrapped poetry completions in compdef guard to prevent early shell function calls
+
+- Verified full Instant Prompt compatibility with zero console output
 
 ---
 
