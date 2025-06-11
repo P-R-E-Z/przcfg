@@ -4,7 +4,7 @@
 [![Shell: Zsh](https://img.shields.io/badge/shell-zsh-informational)](https://www.zsh.org/)
 [![Editor: Neovim](https://img.shields.io/badge/editor-neovim-purple)](https://neovim.io/)
 
-**przcfg** is a Fedora 42 developer environment template, not just a dotfiles repo.
+**Prez dotfiles** is my dotfiles repo for my configs for my Fedora 42 OS developer environment.
 
 It includes:
 
@@ -13,7 +13,7 @@ It includes:
 - Audit + logging of installed tools
 - Version checking and future GUI bootstrap support
 
-It was built by Prez (a developer + ASRT student) to quickly spin up a reliable Linux development environment using one script. While originally structured inside a `~/dotfiles/` folder for personal use, it has now turned into a full on project to make a developer ready script that will install all the tools (that I use only, for now) and so much more. A quick TL,DR all of the install scripts that the prez-dev-setup.sh uses to install things like lua, neovim, zsh, etc., will be installed from official sources so wherever they are pathed to is decided by their devs not me, but I do have a registry.sh that tracks everything that was installed. Everything installed that isn't a script, like zshrc.d will go into your Home folder. There's some cool stuff here so if you don't want to use anything from my setup feel to check out the scripts and let me know if there's anything you think I could do better!
+Built by me to quickly spin up a reliable Linux development environment using one script. A quick **TL,DR** all of the install scripts that the prez-dev-setup.sh uses to install things like lua, neovim, zsh, etc., will be installed from official sources so wherever they are pathed to is decided by their devs not me, but I do have a registry.sh that tracks everything that was installed. Everything installed that isn't a script, like zshrc.d will go into your Home folder. There's some cool stuff here so if you don't want to use anything from my setup feel to check out the scripts and let me know if there's anything you think I could do better!
 
 > No hardcoded paths. Everything is dynamically resolved at runtime.
 
@@ -22,11 +22,9 @@ It was built by Prez (a developer + ASRT student) to quickly spin up a reliable 
 <details>
 <summary><strong>Cloning przcfg</strong></summary>
 
-You **do not need to clone this into `~/dotfiles/przcfg/`** unless you want to for organizational purposes.
-
 ```bash
-git clone https://github.com/P-R-E-Z/przcfg ~/Dev/przcfg
-cd ~/Dev/przcfg
+git clone https://github.com/P-R-E-Z/dotfiles ~/dotfiles
+cd ~/dotfiles
 chmod +x prez-dev-setup.sh
 ./prez-dev-setup.sh
 ```
@@ -40,7 +38,7 @@ If you're using this as a full environment template, choose any path you want. I
 I personally uses this structure:
 
 ```plaintext
-~/dotfiles/przcfg/       # Main config + toolchain repo
+~dotfiles/       # Main config + toolchain repo
 ~/dotfiles/other-repos/  # Any isolated module repos (if broken out)
 ```
 
